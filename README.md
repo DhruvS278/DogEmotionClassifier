@@ -13,8 +13,9 @@ To prevent overfitting, we used the Adam optimizer, which is known for its robus
 The following graphs show the training and validation loss curves for the model:
 
 # Training Loss v/s Validation Loss Graph
-
+![My Image](3ec055cb-c7c5-4af6-9a99-ff965ce9481a.png)
 # Training Accuracy V/s Validation Accuracy Graph
+![My Image](14a9094f-570f-467e-9d9d-2f5a12fa3218.png)
 
 ## Data Set
 The original data set used to train this model can be found at the following link: https://www.kaggle.com/datasets/danielshanbalico/dog-emotion
