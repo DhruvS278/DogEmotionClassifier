@@ -16,24 +16,14 @@ class_labels = ['Angry', 'Sad', 'Relaxed', 'Happy']
 def home():
     return render_template_string('''
         <html>
-  <head>
-    <title>Dog Emotion Classifier</title>
-  </head>
-  <body>
-    <h1>Dog Emotion Classifier</h1>
-    <p>Upload an image of a dog to classify its emotion:</p>
-    <form action="/classify" method="POST" enctype="multipart/form-data">
-      <input type="file" name="image">
-      <br><br>
-      <input type="submit" value="Classify">
-    </form>
-    <br>
-    {% if prediction %}
-      <h2>Prediction:</h2>
-      <p>The dog is {{ prediction }}</p>
-    {% endif %}
-  </body>
-</html>
+            <body>
+                <h1>Dog Emotion Classification API</h1>
+                <form method="POST" action="/predict" enctype="multipart/form-data">
+                    <input type="file" name="image">
+                    <input type="submit" value="Predict">
+                </form>
+            </body>
+        </html>
     ''')
 
 # Define API endpoint for image prediction
